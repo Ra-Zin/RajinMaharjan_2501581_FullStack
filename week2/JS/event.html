@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>events</title>
+</head>
+<body>
+	<button id = 'btn'> Click Me </button>
+	<h1 id = 'info'> Hover Me </h1>
+
+	<input id = 'input' placeholder = 'message'>
+	<p id = 'display'></p>
+	<script>
+		//element.addEventListener('event_name', callback_fuction)
+		const btn = document.getElementById('btn');
+		btn.addEventListener('click', function (){
+			alert ("You have been touched");
+		} );
+
+		const hover = document.getElementById('info');
+		hover.addEventListener('mouseover', function onhover(){
+			hover.style.color = "red";
+		});
+
+		
+		document.getElementById('info').addEventListener('mouseout', function onhover(){
+			document.getElementById('info').style.color = "black";
+		});
+
+		const inp = document.getElementById('input');
+		inp.addEventListener('input', function oninput(){
+			document.getElementById('display').innerText = inp.value;
+		});
+
+
+
+
+	</script>
+</body>
+</html>

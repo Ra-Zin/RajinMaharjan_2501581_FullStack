@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <script>
+        function greet(){
+            // var -> function scoped because variable declared wirh var within the function is only accessible within the function
+            var a = 2;
+            console.log(a);
+
+            // These variables are function scoped variable and can be accessed inside anywhere inside the function 
+            // let b = 3; 
+            // const c = 4;
+            // var d = 5;
+
+            if (true){
+            let b = 3;
+            const c = 4;
+            var d = 5;
+
+            console.log(b);
+            console.log(c);
+            }
+            // console.log(d); //-> will not cause error because d is dunction scoped variable 
+            // console.log(b); //-> will cause error because 'b' and 'c' are block scoped variable which can only be accessed inside if block
+            // console.log(c);
+        }
+        // console.log(a) -> will be error since 'a' is a function scoped variable whose scope is only inside the fuction greet
+        greet();
+
+    </script>
+
+</body>
+</html>

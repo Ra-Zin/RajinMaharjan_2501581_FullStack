@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> dom </title>
+</head>
+<body>
+	<h1 id = 'info'> Hello, World </h1>
+	<p class = 'demo'> Hello, Warldo </p>
+	<p class = 'demo'> Da Worldo </p>
+
+
+	<script>
+		const p = document.getElementById('info');
+		p.innerText = 'Hello, Rajin';
+		p.style.color = "red";
+		p.remove();
+
+		const a = document.getElementsByClassName('demo');
+		a[0].innerText = "Hello";
+		a[0].style.color = 'blue';
+
+		a[1].innerText = 'World';
+		a[1].style.color = 'green';
+
+
+		document.querySelector('#info'); // -> for id
+		document.querySelector('.clas'); // -> for class, returns first element with class demo
+		document.querySelectorAll('.demo'); // -> for class, returns all element with clas demo
+		document.querySelector('p'); // returns first element with tag p
+		document.querySelectorAll('p'); // returns all element with tag p
+
+	</script>
+
+</body>
+</html>
