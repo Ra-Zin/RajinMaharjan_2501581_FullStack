@@ -72,6 +72,15 @@ body{
 	background-color: black;
     color: white;
 }
+
+#navButton{
+	background: transparent;
+	border:none;
+	font-size: 30px;
+}
+
+
+
 .name{
 	text-align: center !important;
 	font-size: 64px !important;
@@ -188,4 +197,46 @@ button:hover{
 	border: 3px solid white;
 	border-radius: 8px;
 	margin: 0 auto;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    
+    #navbar ul {
+        display: none;
+        position: absolute;
+        top: 67px;
+        right: 0;
+        background-color: darkgrey;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    #menu-toggle:checked ~ ul {
+        display: block;
+    }
+    
+    #navbar ul li {
+        display: block;
+        margin: 15px 0;
+    }
 }

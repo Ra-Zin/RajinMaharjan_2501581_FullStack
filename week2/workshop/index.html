@@ -9,23 +9,27 @@
 </head>
 
 <body>
-    <div class = 'container'>
-    <video class = 'video' width = '1800' height = '800' autoplay muted loop id="bg-video">
-        <source  src="anime.mp4" type="video/mp4">
-    </video>
-    <header>
-        <div id="navtool">
-            <nav id="navbar">
-                <h1> Portfolio </h1>
-                <ul>
-                    <li> <a href="#about">About Me</a> </li>
-                    <li> <a href="#projects">My Projects</a> </li>
-                    <li> <a href="#contact">Contact Me </a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class='container'>
+        <video class='video' width='1800' height='800' autoplay muted loop id="bg-video">
+            <source src="anime.mp4" type="video/mp4">
+        </video>
+        <header>
+            <div id="navtool">
+                <nav id="navbar">
+                    <h1>Portfolio</h1>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu">☰</label>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
     </div>
+
     <h1 class='name'>I'm Rajin Maharjan.</h1>
     <p style="color: white; text-align: center; font-family: 'Montserrat', sans-serif;"> Computer Science Student. </p>
     <div class='main_div'>
@@ -79,24 +83,26 @@
                     <label class="label"> Email: </label><br>
                     <input class="input" id="input_mail" type="email" placeholder="Enter your mail">
                     <br>
-                    <p class = 'message'></p>
+                    <p class='message'></p>
                     <label class="label"> Phone number:</label><br>
-                    <input class="input" id = 'input_number' type="number" placeholder="Enter your number">
+                    <input class="input" id='input_number' type="number" placeholder="Enter your number">
                     <br>
-                    <p class = 'message'></p><label class='label'> Message: </label><br>
-                    <textarea class='input' id = 'input_message' type='Message' placeholder='Write something...'></textarea>
-                    <p class = 'message'> </p>
-                    <p id  = "msg_sent"></p>
+                    <p class='message'></p><label class='label'> Message: </label><br>
+                    <textarea class='input' id='input_message' type='Message'
+                        placeholder='Write something...'></textarea>
+                    <p class='message'> </p>
+                    <p id="msg_sent"></p>
                     <button> Send </button>
                 </form>
-                
+
 
             </section>
         </div>
-    	<footer>
-        	<p style="text-align: center; margin-bottom: 10px;">&copy; 2025 Rajin Maharjan - All Rights Reserved</p>
-		</footer>
-	</div>
-    <script src = 'script.js'></script>
+        <footer>
+            <p style="text-align: center; margin-bottom: 10px;">&copy; 2025 Rajin Maharjan - All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src='script.js'></script>
 </body>
+
 </html>
