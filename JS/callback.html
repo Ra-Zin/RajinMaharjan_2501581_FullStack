@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Callback function is a function which is passed as an argument to another function
+        function greet(name, callback){
+            setTimeout(() => {console.log("Hello " + name);
+        }, 2000);
+        callback("Rajin");
+    }
+
+        function byebye(name){
+            console.log("Bye Bye " + name + "!");
+        }
+
+        greet("Rajin", byebye);
+    </script>
+</body>
+</html>
